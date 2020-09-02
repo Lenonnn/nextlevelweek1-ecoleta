@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+a{ 
+    text-decoration: none;
+}
+body{
+    /* background-color: #f0f0f5; */
+    background: -webkit-gradient(linear, left top, right top, from(#CCCCCC), to(#ee8585));
+    -webkit-font-smothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+}
+

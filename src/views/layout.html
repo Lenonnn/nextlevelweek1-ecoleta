@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <!-- Author : Lenon Version : 1.0 Date : 01/06/2020 Description : Application builded during Rocktseat Next Level Week -->
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {% block title %}
+            <title>Ecoleta NLW</title>
+        {% endblock title %}
+
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+        <!-- Usa essas configs pelo node.js -->
+        {# Carrega estilos para todas as páginas HTML #}
+        <link rel="stylesheet" href="/styles/main.css">
+        {# Carrega os estilos especificos de cada página #}
+
+        {% block styles %}
+        {% endblock styles %}
+
+        <link rel="stylesheet" href="/styles/responsive.css">
+
+    </head>
+
+    <body>
+
+        <div id="{{ pageId }}">
+            {% block content %}
+            {% endblock content %}
+        </div>
+
+        {% block modal %}
+        {% endblock modal %}
+
+        {% block scripts %}
+        {% endblock scripts %}
+    </body>
+</html>
